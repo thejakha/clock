@@ -1,0 +1,271 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body.list{
+    --primary-color: #fff;
+    --secondary-color: rgba(0, 0, 0, .8);
+}
+
+body{
+    --primary-color: rgba(0, 0, 0, .8);
+    --secondary-color: #fff;
+    background-color: var(--secondary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+.big-check{
+    position: absolute;
+    display: flex;
+    top: 5%;
+    right: 10%;
+    width: 82px;
+    height: 40px;
+    border-radius: 40px;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, .1);
+}
+.mini-check{
+    position: absolute;
+    align-self: center;
+    left: 3px;
+    height: 35px;
+    width: 35px;
+    border-radius: 40px;
+    background-color: var(--secondary-color);
+}
+.moon{
+    width: 40px;
+    position: absolute;
+    right: 5px;
+}
+.sun{
+    width: 30px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    display: none;
+}
+
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    border: 15px solid var(--primary-color);
+    width: 500px;
+    height: 500px;
+    border-radius: 100%;
+    padding: 30px;
+    overflow: hidden;
+}
+.container>h1{
+    font-size: 60px;
+    color: var(--primary-color);
+}
+.twelve{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.six{
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 0);
+}
+.nine{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(50%, -50%);
+}
+.three{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.second{
+    position: absolute;
+    height: 250px;
+    align-self: center;
+    width: 3px;
+    border-radius: 10px;
+    background-color: red;
+}
+.minute{
+    height: 150px;
+    align-self: center;
+    width: 5px;
+    border-radius: 10px;
+    background-color: blueviolet;
+}
+.hour{
+    position: absolute;
+    height: 120px;
+    align-self: center;
+    width: 8px;
+    border-radius: 10px;
+    background-color: var(--primary-color);
+}
+.one{
+    position: absolute;
+    align-self: center;
+    width: 5px;
+    height: 30px;
+    background-color: var(--primary-color);
+    transform: rotate(30deg) translateY(-700%);
+}
+.two{
+    position: absolute;
+    align-self: center;
+    width: 5px;
+    height: 30px;
+    background-color: var(--primary-color);
+    transform: rotate(60deg) translateY(-700%);
+}
+.four{
+    position: absolute;
+    align-self: center;
+    width: 5px;
+    height: 30px;
+    background-color: var(--primary-color);
+    transform: rotate(120deg) translateY(-700%);
+}
+.five{
+    position: absolute;
+    align-self: center;
+    width: 5px;
+    height: 30px;
+    background-color: var(--primary-color);
+    transform: rotate(150deg) translateY(-700%);
+}
+.seven{
+    position: absolute;
+    align-self: center;
+    width: 5px;
+    height: 30px;
+    background-color: var(--primary-color);
+    transform: rotate(210deg) translateY(-700%);
+}
+.eight{
+    position: absolute;
+    align-self: center;
+    width: 5px;
+    height: 30px;
+    background-color: var(--primary-color);
+    transform: rotate(240deg) translateY(-700%);
+}
+.ten{
+    position: absolute;
+    align-self: center;
+    width: 5px;
+    height: 30px;
+    background-color: var(--primary-color);
+    transform: rotate(300deg) translateY(-700%);
+}
+.eleven{
+    position: absolute;
+    align-self: center;
+    width: 5px;
+    height: 30px;
+    background-color: var(--primary-color);
+    transform: rotate(330deg) translateY(-700%);
+}
+@media (max-width: 600px) {
+    .container{
+        width: 350px;
+        height: 350px;
+    }
+    .one{
+        position: absolute;
+        align-self: center;
+        width: 5px;
+        height: 20px;
+        background-color: var(--primary-color);
+        transform: rotate(30deg) translateY(-700%);
+    }
+    .two{
+        position: absolute;
+        align-self: center;
+        width: 5px;
+        height: 20px;height: 20px;
+        background-color: var(--primary-color);
+        transform: rotate(60deg) translateY(-700%);
+    }
+    .four{
+        position: absolute;
+        align-self: center;
+        width: 5px;
+        height: 20px;height: 20px;
+        background-color: var(--primary-color);
+        transform: rotate(120deg) translateY(-700%);
+    }
+    .five{
+        position: absolute;
+        align-self: center;
+        width: 5px;
+        height: 20px;height: 20px;
+        background-color: var(--primary-color);
+        transform: rotate(150deg) translateY(-700%);
+    }
+    .seven{
+        position: absolute;
+        align-self: center;
+        width: 5px;
+        height: 20px;height: 20px;
+        background-color: var(--primary-color);
+        transform: rotate(210deg) translateY(-700%);
+    }
+    .eight{
+        position: absolute;
+        align-self: center;
+        width: 5px;
+        height: 20px;
+        background-color: var(--primary-color);
+        transform: rotate(240deg) translateY(-700%);
+    }
+    .ten{
+        position: absolute;
+        align-self: center;
+        width: 5px;
+        height: 20px;
+        background-color: var(--primary-color);
+        transform: rotate(300deg) translateY(-700%);
+    }
+    .eleven{
+        position: absolute;
+        align-self: center;
+        width: 5px;
+        height: 20px;
+        background-color: var(--primary-color);
+        transform: rotate(330deg) translateY(-700%);
+    }
+    .second{
+        position: absolute;
+        height: 150px;
+        align-self: center;
+        width: 3px;
+        border-radius: 10px;
+        background-color: red;
+    }
+    .minute{
+        height: 100px;
+        align-self: center;
+        width: 5px;
+        border-radius: 10px;
+        background-color: blueviolet;
+    }
+    .hour{
+        position: absolute;
+        height: 80px;
+        align-self: center;
+        width: 8px;
+        border-radius: 10px;
+        background-color: var(--primary-color);
+    }
+}
